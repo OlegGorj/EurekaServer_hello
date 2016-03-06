@@ -1,0 +1,11 @@
+server:
+  port: 8761
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://eurekaregistry2.mybluemix.net/eureka/
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
