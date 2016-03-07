@@ -18,19 +18,7 @@ generate the Docker container. The container is published in dockerhub at `sprin
 "# Netflix_Eureka_Server" 
 
 ## Running this project on IBM bluemix
-cf push eurekaregistry2 -p target/eureka-0.0.1-SNAPSHOT.jar
+`cf push eurekaregistry2 -p target/eureka-0.0.1-SNAPSHOT.jar`
 
-Note the following app name in application.yml: http://eurekaregistry2.mybluemix.net/eureka/
-Please change to ypour app name or use from an environment variable
-
-server:
-  port: 8761
-
-eureka:
-  client:
-    registerWithEureka: false
-    fetchRegistry: false
-    serviceUrl:
-      defaultZone: http://eurekaregistry2.mybluemix.net/eureka/
-  server:
-    waitTimeInMsWhenSyncEmpty: 0
+Note the following app name in application.yml: `http://eurekaregistry2.mybluemix.net/eureka/`
+Please change to your app name or use from an environment variable
