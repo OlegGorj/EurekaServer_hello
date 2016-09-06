@@ -16,6 +16,7 @@ main method, or use "mvn spring-boot:run or gradle bootRun or ./gradlew bootRun"
 There is a Maven goal (using a [plugin](https://github.com/spring-cloud-samples/eureka/blob/feature/docker/pom.xml#L48)) to 
 generate the Docker container. The container is published in dockerhub at `springcloud/eureka`.
 "# Netflix_Eureka_Server" 
+## adding section to run on aws
 
 ## Running this project on IBM bluemix
 `cf push eurekaregistry2 -p target/eureka-0.0.1-SNAPSHOT.jar`
